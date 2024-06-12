@@ -5,7 +5,7 @@ const User = require('./User')
 const app = express();
 
 const corsOption = {
-    orgin: '*', //해당주소만 요청허락
+    orgin: ['*','http://127.0.0.1:5500'], //해당주소만 요청허락
     credentials: true //사용자 인증이 필요한 리소스 요청가능
 }
 
